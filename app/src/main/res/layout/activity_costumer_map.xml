@@ -64,63 +64,69 @@
     </RelativeLayout>
 
 
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:layout_gravity="bottom">
+        android:layout_gravity="bottom"
+        android:orientation="vertical">
+
         <LinearLayout
+            android:id="@+id/driverInfo"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/driverInfo"
             android:layout_gravity="bottom"
-            android:orientation="horizontal"
             android:background="@android:color/white"
+            android:orientation="horizontal"
             android:visibility="gone">
+
             <ImageView
+                android:id="@+id/driverProfileImage"
                 android:layout_width="100sp"
                 android:layout_height="100sp"
-                android:id="@+id/driverProfileImage"
-                android:src="@mipmap/ic_default_user"
-                android:padding="20sp"/>
+                android:padding="20sp"
+                android:src="@mipmap/ic_default_user" />
+
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
                 android:paddingLeft="40sp">
+
                 <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
                     android:id="@+id/driverName"
-                    android:paddingBottom="10sp"
-                    android:paddingTop="20sp"/>
-                <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:paddingBottom="10sp"
+                    android:paddingTop="20sp" />
+
+                <TextView
                     android:id="@+id/driverPhone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     android:paddingBottom="10sp"
-                    android:paddingTop="20sp"/>
+                    android:paddingTop="20sp" />
+
                 <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
                     android:id="@+id/driverCar"
-                    android:paddingBottom="10sp"
-                    android:paddingTop="20sp"/>
-                <RatingBar
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:paddingBottom="10sp"
+                    android:paddingTop="20sp" />
+
+                <RatingBar
                     android:id="@+id/ratingBar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:numStars="5"
-                    android:stepSize="0.1"/>
+                    android:stepSize="0.1" />
             </LinearLayout>
         </LinearLayout>
 
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="90dp"
-            android:background="@color/black_overlay"
+            android:layout_height="110dp"
+            android:background="@drawable/bottom_bit"
 
             android:orientation="vertical">
 
@@ -135,18 +141,18 @@
                     android:id="@+id/UberX"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textColor="@color/white"
+                    android:text="BodaBoda"
 
-                    android:text="BodaBoda" />
+                    android:textColor="@color/colorBlack" />
 
                 <RadioButton
                     android:id="@+id/UberBlack"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="20dp"
-                    android:textColor="@color/white"
-                    android:textStyle="bold"
-                    android:text="TukTuk" />
+                    android:text="TukTuk"
+                    android:textColor="@color/colorBlack"
+                    android:textStyle="bold" />
 
                 <RadioButton
                     android:id="@+id/UberXl"
@@ -162,21 +168,57 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="20dp"
 
-                    android:text="Car Hire" />
+                    android:text="Limo" />
             </RadioGroup>
 
             <Button
                 android:id="@+id/request"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="25dp"
                 android:layout_alignParentBottom="true"
                 android:layout_alignParentStart="true"
                 android:layout_gravity="bottom"
 
                 android:background="@drawable/call"
                 android:padding="5dp"
-                android:text="call TaxiIT"
+                android:text="SET PICKUP LOCATION"
                 android:textColor="@color/white" />
+
+            <Button
+                android:id="@+id/bike_button"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="34dp"
+                android:background="@drawable/motor_bike_icon" />
+
+            <Button
+                android:id="@+id/tuktuk_button"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="116dp"
+                android:background="@drawable/tuktuk_icon" />
+
+            <Button
+                android:id="@+id/taxi_button"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="118dp"
+                android:background="@drawable/taxi_icon_m" />
+
+            <Button
+                android:id="@+id/limo_button"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="34dp"
+                android:background="@drawable/limo_round_small" />
         </RelativeLayout>
     </LinearLayout>
 
