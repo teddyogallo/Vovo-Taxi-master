@@ -1,0 +1,228 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MapActivity" >
+
+    <fragment xmlns:map="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/map"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:scrollbars="vertical"
+        class="com.google.android.gms.maps.SupportMapFragment"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <Button
+            android:id="@+id/logout"
+            android:layout_width="70dp"
+            android:layout_height="30dp"
+            android:background="@drawable/bg_green"
+            android:layout_margin="3dp"
+            android:textColor="@color/white"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:text="Log Out" />
+
+        <Button
+            android:id="@+id/start"
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="73dp"
+            android:text="Start"
+
+            android:background="@drawable/bg_greenreal"
+
+            android:textColor="@color/white"/>
+
+        <Button
+            android:id="@+id/pause"
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignStart="@+id/start"
+            android:layout_marginTop="117dp"
+
+            android:background="@drawable/bg_greenreal"
+            android:text="pause"
+
+            android:textColor="@color/white" />
+        <Button
+            android:id="@+id/stop"
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignStart="@+id/pause"
+            android:layout_marginTop="161dp"
+            android:background="@drawable/bg_greenreal"
+            android:text="Stop"
+
+            android:textColor="@color/white" />
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+
+            <Button
+                android:id="@+id/history"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_margin="3dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_greenreal"
+                android:text="history"
+
+                android:textColor="@color/white" />
+
+            <Button
+                android:id="@+id/settings"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_margin="3dp"
+                android:layout_weight="1"
+
+                android:background="@drawable/bg_greenreal"
+                android:text="Settings"
+                android:textColor="@color/white" />
+
+
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/customerInfo"
+            android:layout_gravity="bottom"
+            android:orientation="vertical"
+            android:visibility="gone"
+
+           android:layout_marginTop="270dp"
+
+            android:elevation="1dp"
+            android:translationZ="1dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/black_overlay"
+                android:visibility="invisible"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="100sp"
+                    android:layout_height="100sp"
+                    android:id="@+id/customerProfileImage"
+                    android:src="@mipmap/ic_default_user"
+                    android:padding="20sp"/>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingLeft="40sp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/customerDestination"
+                        android:paddingBottom="10sp"
+                        android:text="Destination: --"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/customerName"
+                        android:paddingBottom="10sp"
+                        android:paddingTop="20sp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/customerPhone"
+                        android:paddingBottom="10sp"
+                        android:paddingTop="20sp"/>
+                </LinearLayout>
+            </LinearLayout>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="picked customer"
+                android:textColor="@color/white"
+                android:background="@drawable/bg_green"
+                android:id="@+id/rideStatus"/>
+
+
+        </LinearLayout>
+
+        <Switch
+            android:id="@+id/workingSwitch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="143dp"
+            android:layout_margin="10sp"
+            android:text="Working" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="200dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginEnd="12dp"
+            android:layout_marginTop="61dp"
+            android:padding="20dp">
+
+            <TextView
+                android:id="@+id/distancetext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+
+                android:layout_marginTop="19dp"
+                android:text="Cost"
+                android:textColor="@color/blacko"
+                android:textStyle="bold"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/speedtext"
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="Speed"
+                android:textColor="@color/blacko"
+                android:textStyle="bold"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/timetext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="26dp"
+                android:text="Time"
+                android:textColor="@color/blacko"
+                android:textStyle="bold"
+                android:textSize="20sp" />
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+
+
+
+</FrameLayout>

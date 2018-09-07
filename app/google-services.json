@@ -1,0 +1,59 @@
+{
+  "project_info": {
+    "project_number": "958634068194",
+    "firebase_url": "https://taxit-bd221.firebaseio.com",
+    "project_id": "taxit-bd221",
+    "storage_bucket": "taxit-bd221.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:958634068194:android:189882f4448b4026",
+        "android_client_info": {
+          "package_name": "com.israelox.taxi.taxit"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "958634068194-6ae8gs15cn44orti7hs585dihrk78oao.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.israelox.taxi.taxit",
+            "certificate_hash": "b384b0abd09b4d3cc5227437c542902e2c65488e"
+          }
+        },
+        {
+          "client_id": "958634068194-8vlu7cdg8pg2od081lm7usa4o1l53kff.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "958634068194-8vlu7cdg8pg2od081lm7usa4o1l53kff.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB19KihiHsU8znfb9GZph3M29OHASLQkdk"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "958634068194-8vlu7cdg8pg2od081lm7usa4o1l53kff.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
